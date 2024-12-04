@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+ 
+    background-image: url('../img/1600w-kZJPDnlr_AM.webp');
+
+        background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que se repita */
+        margin: 0;
+        font-family: Arial, sans-serif;
+    
+    
+   
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6f91;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#calendario-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Filas de cinco columnas */
+    gap: 10px;
+}
+
+.pista {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.pista:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.fecha {
+    font-weight: bold;
+}
+
+.pista-bloqueada {
+    background-color: #ff9a9e;
+}
+
+.pista-bloqueada p {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
